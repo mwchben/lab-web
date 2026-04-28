@@ -1,0 +1,118 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --text-color: #0b0b0b;
+    --base-color: #f92b2b;
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Roboto Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+body {
+   padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+}
+
+nav {
+    margin: 1em auto 3em auto;
+    width: min(1200px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav ul li::first-child {
+    margin-right: auto;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.header, section {
+    margin: 2em, auto;
+    width: min(75em, 100%);
+    padding: min(2em, 15%);
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.flex-container img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1.5em;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.125em;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: .75em 1.5em;
+    background-color: var(--base-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 0.5em;
+    font-weight: 500;
+}
+
+.secondary {
+    background-color: var(--text-color);
+}
+
+.section {
+    padding: 3em min(2em, 15%);
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+}
+
+.section p {
+    margin-top: 1em;
+    font-size: 1.25em;
+}
