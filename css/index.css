@@ -5,6 +5,8 @@
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
+    --color-one: #cfcaca;
+    --color-two: #65735e;
     --text-color: #0b0b0b;
     --base-color: #f92b2b;
     --font-primary: 'Playfair Display', serif;
@@ -20,7 +22,6 @@
 html {
     font-family: var(--font-secondary);
     color: var(--text-color);
-    background-color: var(--secondary-color);
 }
 
 body {
@@ -34,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 nav {
     margin: 1em auto 3em auto;
-    width: min(1200px, 100%);
+    width: min(1000px, 100%);
 }
 
 nav ul {
@@ -44,7 +45,7 @@ nav ul {
     gap: 2em;
 }
 
-nav ul li::first-child {
+nav ul li:first-child {
     margin-right: auto;
     font-weight: bold;
     font-family: var(--font-secondary);
@@ -60,10 +61,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.header, section {
+.header, .section {
     margin: 2em, auto;
     width: min(75em, 100%);
     padding: min(2em, 15%);
+    background-color: var(--color-one);
+    border-radius: 1.5em;
 }
 
 .flex-container{
@@ -86,7 +89,7 @@ nav a:hover {
 
 .text-container p {
     margin: .75em 0 1em 0;
-    font-size: 1.125em;
+    font-size: 1.25em;
 }
 
 .cta-btn {
@@ -97,7 +100,7 @@ nav a:hover {
     text-decoration: none;
     border-radius: 0.5em;
     font-weight: 500;
-}
+    }
 
 .secondary {
     background-color: var(--text-color);
@@ -106,6 +109,7 @@ nav a:hover {
 .section {
     padding: 3em min(2em, 15%);
     text-align: center;
+    background-color: var(--color-two);
 }
 
 .section h2 {
